@@ -1,22 +1,100 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
+a{
+  color: #fff;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+span{
+  float: right;
+  padding: 0 25px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.sidenav{
+  height: auto;
+  width: auto;
+  background: #282C34;
+  padding: 50px;
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  transition: 0.5s ease;
+  text-align:center;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #09d3ac;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.boxTitle {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+  color: white;
+  background: #282C34;
+  padding: 0 10px;
+  border-radius: 50%;
+  outline: none;
+  margin: 10px;
+  z-index: 999;
+}
+
+.boxContent{
+  color: #fff !important;
+  z-index: 2;
+  position: absolute;
+}
+
+form{
+  background: #282C34;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+input{
+  padding: 5px;
+  margin: 20px;
+}
+
+.btnSubmit{
+  background: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.image img{
+  top: 0;
+  position: absolute;
+  border: 5px double black
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
