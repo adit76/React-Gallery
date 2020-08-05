@@ -17,13 +17,15 @@ span{
 
 .sidenav{
   height: auto;
-  width: auto;
-  background: #282C34;
-  padding: 50px;
+  width: 100%;
+  background: #282C3455;
+  padding: 10px;
+  margin-top: 5px;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   z-index: 999;
   top: 0;
   right: 0;
@@ -48,18 +50,22 @@ span{
 
 .boxTitle {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
   cursor: pointer;
   color: white;
   background: #282C34;
-  padding: 0 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
   border-radius: 50%;
   outline: none;
-  margin: 10px;
   z-index: 999;
+  user-select: none;
+  font-family: Arial;
+  text-align: center;
 }
 
 .boxContent{
@@ -69,16 +75,22 @@ span{
 }
 
 form{
-  background: #282C34;
-  padding: 20px 50px;
+  top: 0;
+  left: 0;
+  width: 500px;
+  background: #282C3444;
+  padding: 5px 10px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  position: fixed;
+  z-index: 9999;
+  transition: all 0.2s ease-out;
 }
 
 input{
   padding: 5px;
-  margin: 20px;
+  /*margin: 20px;*/
 }
 
 .btnSubmit{
@@ -90,9 +102,19 @@ input{
 .image img{
   top: 0;
   position: absolute;
-  border: 5px double black
+  border: 1px double green;
+  box-sizing: border-box;
 }
 
+.no-image-msg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: Arial;
+	font-size: 1.3em;
+	user-select: none;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}

@@ -24,7 +24,7 @@ class OpenNav extends Component {
     const { opened } = this.state;
 
     if (opened){
-      title = '+';
+      title = 'x';
     }else{
       title = '+';
     }
